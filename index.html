@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="胡雨 · AI 应用开发作品集：多智能体协同决策平台、企业 RAG 智能问答系统、人在旅途 AI 小助手。">
+  <meta name="theme-color" content="#0a0f12">
+  <title>胡雨 · AI 应用开发作品集</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-dot"><i></i></span>
+      <span class="brand-copy"><strong>胡雨</strong><small>AI APPLICATION PORTFOLIO</small></span>
+    </a>
+    <nav class="main-nav" aria-label="页面导航">
+      <a href="#work">项目</a>
+      <a href="#about">关于</a>
+      <a href="#notes">说明</a>
+    </nav>
+    <a class="live-status" href="https://github.com/carrotrain4" target="_blank" rel="noreferrer"><i></i>3 LIVE DEMOS</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-meta">
+        <span>AI APPLICATION DEVELOPMENT</span>
+        <span>2026 · CHENGDU</span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-overline"><span>01</span> 从业务理解，到可运行的作品</p>
+          <h1>把 AI 方案，<br><em>做成可以点开的作品。</em></h1>
+          <p class="hero-intro">这里是我围绕多 Agent 编排、RAG 知识问答与 Coze 工作流完成的三个交互式项目。每一个都能直接打开体验，而不只是停留在方案截图里。</p>
+          <a class="hero-cta" href="#work">浏览项目 <span>↓</span></a>
+        </div>
+        <aside class="hero-aside">
+          <div class="orbit-mark">
+            <span class="orbit-ring ring-a"></span>
+            <span class="orbit-ring ring-b"></span>
+            <span class="orbit-core">AI</span>
+            <span class="orbit-node node-a"></span>
+            <span class="orbit-node node-b"></span>
+            <span class="orbit-node node-c"></span>
+          </div>
+          <div class="hero-numbers">
+            <div><strong id="demoCount">3</strong><span>项目 Demo</span></div>
+            <div><strong>1</strong><span>完整作品集</span></div>
+            <div><strong>∞</strong><span>继续迭代</span></div>
+          </div>
+          <div class="hero-foot">
+            <span>SCROLL TO EXPLORE</span>
+            <i></i>
+            <span>01—03</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="workTitle">
+      <div class="section-heading">
+        <div><span class="section-kicker">SELECTED WORK / 01—03</span><h2 id="workTitle">三个可以亲手点开的项目</h2></div>
+        <p>每个项目都包含完整的交互流程、可解释的状态展示与明确的实现边界。</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card reveal" id="project-01">
+          <a class="project-visual" href="https://carrotrain4.github.io/multi-agent-decision-demo/" target="_blank" rel="noreferrer" aria-label="打开多智能体协同决策平台 Demo">
+            <img src="assets/project-01.jpg" alt="多智能体协同决策平台界面预览">
+            <span class="visual-open"><i></i>OPEN DEMO</span>
+            <span class="visual-index">01</span>
+          </a>
+          <div class="project-copy">
+            <div class="project-kicker"><span>CASE 01</span><i></i>MULTI-AGENT ORCHESTRATION</div>
+            <h3>多智能体协同决策平台</h3>
+            <p class="project-summary">以汽车零部件制造为场景，主路由 Agent 拆解现场任务，知识、文档与数据 Agent 并行执行，最终汇聚为可追溯的排障决策简报。</p>
+            <div class="project-facts">
+              <div><strong>3</strong><span>并行子 Agent</span></div>
+              <div><strong>3</strong><span>典型业务场景</span></div>
+              <div><strong>42%</strong><span>方案推理降本</span></div>
+            </div>
+            <div class="project-tags"><span>LangGraph 思路</span><span>DAG 编排</span><span>MCP 工具</span><span>容错熔断</span><span>SSE 事件流</span></div>
+            <div class="project-actions">
+              <a class="primary-action" href="https://carrotrain4.github.io/multi-agent-decision-demo/" target="_blank" rel="noreferrer">打开互动 Demo <span>↗</span></a>
+              <a class="secondary-action" href="https://github.com/carrotrain4/multi-agent-decision-demo" target="_blank" rel="noreferrer">查看源码</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reverse reveal" id="project-02">
+          <a class="project-visual" href="https://carrotrain4.github.io/rag-knowledge-demo/" target="_blank" rel="noreferrer" aria-label="打开企业 RAG 智能问答系统 Demo">
+            <img src="assets/project-02.jpg" alt="企业 RAG 智能问答系统界面预览">
+            <span class="visual-open"><i></i>OPEN DEMO</span>
+            <span class="visual-index">02</span>
+          </a>
+          <div class="project-copy">
+            <div class="project-kicker"><span>CASE 02</span><i></i>RETRIEVAL AUGMENTED GENERATION</div>
+            <h3>知序 · 企业 RAG 智能问答</h3>
+            <p class="project-summary">面向制造企业知识孤岛，把多源文档统一接入，通过父子块切割、混合检索、BGE-Reranker 精排与 RAGAS 评估，输出带出处的可信回答。</p>
+            <div class="project-facts">
+              <div><strong>80%+</strong><span>自动应答率</span></div>
+              <div><strong>+40%</strong><span>知识覆盖提升</span></div>
+              <div><strong>0.93</strong><span>RAGAS 综合分</span></div>
+            </div>
+            <div class="project-tags"><span>Hybrid RAG</span><span>父子块切割</span><span>BGE-Reranker</span><span>RAGAS</span><span>低置信兜底</span></div>
+            <div class="project-actions">
+              <a class="primary-action" href="https://carrotrain4.github.io/rag-knowledge-demo/" target="_blank" rel="noreferrer">打开互动 Demo <span>↗</span></a>
+              <a class="secondary-action" href="https://github.com/carrotrain4/rag-knowledge-demo" target="_blank" rel="noreferrer">查看源码</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-04">
+          <a class="project-visual" href="https://carrotrain4.github.io/travel-ai-assistant-demo/" target="_blank" rel="noreferrer" aria-label="打开人在旅途 AI 小助手 Demo">
+            <img src="assets/project-04.jpg" alt="人在旅途 AI 小助手界面预览">
+            <span class="visual-open"><i></i>OPEN DEMO</span>
+            <span class="visual-index">03</span>
+          </a>
+          <div class="project-copy">
+            <div class="project-kicker"><span>CASE 03</span><i></i>COZE MULTI-WORKFLOW ASSISTANT</div>
+            <h3>去野 · 人在旅途 AI 小助手</h3>
+            <p class="project-summary">一个基于 Coze 多工作流思路搭建的旅行搭子：主调用 Agent 根据意图，把需求路由给天气、Pose、语音故事、穿搭、文案与行程规划工作流。</p>
+            <div class="project-facts">
+              <div><strong>6</strong><span>旅行工作流</span></div>
+              <div><strong>1</strong><span>主调用 Agent</span></div>
+              <div><strong>&lt;2s</strong><span>平均响应</span></div>
+            </div>
+            <div class="project-tags"><span>Coze 思路</span><span>主 Agent 路由</span><span>Workflow</span><span>Web Speech</span><span>旅行卡片</span></div>
+            <div class="project-actions">
+              <a class="primary-action" href="https://carrotrain4.github.io/travel-ai-assistant-demo/" target="_blank" rel="noreferrer">打开互动 Demo <span>↗</span></a>
+              <a class="secondary-action" href="https://github.com/carrotrain4/travel-ai-assistant-demo" target="_blank" rel="noreferrer">查看源码</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="about-left reveal">
+        <span class="section-kicker">ABOUT / 04</span>
+        <h2 id="aboutTitle">业务理解、视觉表达，<br>以及把想法快速做成 Demo 的能力。</h2>
+        <p>计算机科学与技术本科，做过数字绘画教学与企业沟通工作。现在聚焦 AI 应用开发，习惯用 AI 编程工具快速验证方案，把抽象的 Agent、RAG 与工作流概念变成可操作、可解释的前端体验。</p>
+        <div class="about-meta">
+          <span>Base · 成都</span><span>方向 · AI 应用开发</span><span>寻找 · 全职机会</span>
+        </div>
+      </div>
+      <div class="skill-grid reveal">
+        <div class="skill-card"><span>01</span><strong>Agent 编排</strong><p>LangGraph / LangChain 思路、状态管理、主子 Agent 路由与 DAG 拆分。</p></div>
+        <div class="skill-card"><span>02</span><strong>RAG 与知识工程</strong><p>文档解析、父子块切割、混合检索、Rerank、引用与质量评估。</p></div>
+        <div class="skill-card"><span>03</span><strong>AI 工具链</strong><p>Cursor / ChatGPT / Trae 辅助开发，Prompt Engineering 与原型验证。</p></div>
+        <div class="skill-card"><span>04</span><strong>前端表达</strong><p>HTML / CSS / JavaScript，交互叙事、数据可视化与响应式设计。</p></div>
+        <div class="skill-card"><span>05</span><strong>工程基础</strong><p>Python、SQL、FastAPI、Redis、MCP 接口设计与可观测性。</p></div>
+        <div class="skill-card"><span>06</span><strong>业务转化</strong><p>从教学与企业沟通经历中沉淀的需求理解、表达与协作能力。</p></div>
+      </div>
+    </section>
+
+    <section class="notes-section" id="notes" aria-labelledby="notesTitle">
+      <div class="notes-head reveal">
+        <span class="section-kicker">IMPORTANT NOTES</span>
+        <h2 id="notesTitle">关于这些 Demo</h2>
+      </div>
+      <div class="notes-grid reveal">
+        <article><span>01</span><h3>可交互，而非截图</h3><p>三个页面都支持点击、输入、状态流转与结果输出，适合面试现场直接操作。</p></article>
+        <article><span>02</span><h3>前端原型边界</h3><p>Agent 编排、检索、路由和容错流程由浏览器内状态机模拟；生产版本可接入真实 LangGraph / RAG / Coze 服务。</p></article>
+        <article><span>03</span><h3>数据均为虚构</h3><p>页面中的企业、设备、天气、行程与指标均为作品演示数据，不对应真实客户信息。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="brand-dot"><i></i></span><strong>胡雨 · AI Application Portfolio</strong></div>
+    <p>Built as an interactive portfolio · 2026</p>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
+
+  <noscript><div class="noscript">此作品集需要启用 JavaScript 以获得完整浏览体验。</div></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
